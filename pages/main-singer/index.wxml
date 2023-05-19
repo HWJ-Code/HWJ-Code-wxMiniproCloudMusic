@@ -1,2 +1,2 @@
 <!--pages/main-singer/index.wxml-->
-<text>pages/main-singer/index.wxml</text>
+<button bindtap="sendRequest">发送请求</button>
