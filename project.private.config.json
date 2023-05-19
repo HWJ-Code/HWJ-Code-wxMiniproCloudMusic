@@ -3,5 +3,18 @@
   "projectname": "wxMiniProMusic",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "mv页",
+          "pathName": "pages/main-mv/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }
