@@ -8,8 +8,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "mv页",
-          "pathName": "pages/main-mv/index",
+          "name": "歌手页",
+          "pathName": "pages/main-singer/index",
           "query": "",
           "launchMode": "default",
           "scene": null

@@ -1,4 +1,4 @@
-// pages/main-mv/index.js
+// pages/main-singer/index.js
 Page({
 
   /**
