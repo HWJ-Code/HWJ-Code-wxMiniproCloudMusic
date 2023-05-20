@@ -1,1 +1,53 @@
 /* pages/main-singer/index.wxss */
+.fix-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 110px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.singer-list {
+  padding-top: 110px;
+}
+
+.singer-area,
+.singer-type {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  min-width: 50px;
+  text-align: center;
+}
+
+.singer-area-active,
+.singer-type-active {
+  color: #f00
+}
+
+.title {
+  background-color: #e7e3e3;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.singer-info {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.img1v1Url {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+}
+
+.van-loading {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}

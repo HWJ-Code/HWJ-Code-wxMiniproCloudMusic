@@ -1,0 +1,23 @@
+{
+  "name": "wxminipromusic",
+  "version": "1.0.0",
+  "description": "仿网易云音乐项目",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HWJ-Code/wxMiniproCloudMusic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HWJ-Code/wxMiniproCloudMusic/issues"
+  },
+  "homepage": "https://github.com/HWJ-Code/wxMiniproCloudMusic#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.19"
+  }
+}

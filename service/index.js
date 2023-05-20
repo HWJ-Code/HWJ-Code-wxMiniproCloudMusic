@@ -1,4 +1,5 @@
 const BASE_URL = 'https://coderwhy-music.vercel.app'
+const TIMEOUT = 10000
 
 class ServerRequest {
   constructor(BASE_URL) {
@@ -10,15 +11,17 @@ class ServerRequest {
         url: this.BASE_URL + api,
         data: params,
         method,
+        timeout: TIMEOUT,
         header: {
           'content-type': 'application/json' // 默认值
         },
         success(res) {
-          console.log(res)
-          resolve(res)
+          resolve(res.data)
         },
         fail(err) {
-          console.log(err)
+          wx.showToast({
+            title: err,
+          })
           rejecet(err)
         }
       })
@@ -27,12 +30,9 @@ class ServerRequest {
   get(api, params) {
     return this.request(api, 'GET', params)
   }
-  get(api, params) {
+  post(api, params) {
     return this.request(api, 'POST', params)
   }
 }
 
-const hRequest = new ServerRequest(BASE_URL)
-export {
-  hRequest,
-}
+export const hRequest = new ServerRequest(BASE_URL)
