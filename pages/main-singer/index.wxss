@@ -27,7 +27,7 @@
 }
 
 .title {
-  background-color: #e7e3e3;
+  background-color: #f5f3f3;
   font-size: 14px;
   padding: 5px 10px;
 }

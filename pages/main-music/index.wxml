@@ -1,2 +1,13 @@
 <!--pages/main-music/index.wxml-->
-<text>pages/main-music/index.wxml</text>
+<van-search 
+  bind:click-input="handleClickSearch" 
+  placeholder="请输入搜索关键词" 
+  shape="round" 
+  readonly />
+<swiper class="banners" indicator-dots autoplay style="height:{{ swiperHeight}}px">
+  <block wx:for="{{banners}}" wx:key="targetId">
+    <swiper-item>
+      <image class="banner-image" src="{{item.imageUrl}}" mode="widthFix" bindload="handleLoadedBannerImg"/>
+    </swiper-item>
+  </block>
+</swiper>

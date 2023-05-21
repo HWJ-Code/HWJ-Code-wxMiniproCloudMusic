@@ -6,6 +6,7 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
+    "backgroundColor": "#fafafa",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "云音乐",
     "navigationBarTextStyle": "black"
@@ -33,5 +34,6 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }

@@ -1,1 +1,7 @@
 /* pages/main-music/index.wxss */
+.banners {
+  padding: 5px 20px;
+}
+.banner-image {
+  width: 100%;
+}

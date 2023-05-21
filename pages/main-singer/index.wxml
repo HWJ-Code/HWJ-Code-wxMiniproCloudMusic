@@ -1,24 +1,26 @@
-<view class="fix-top">
-  <view>
-    <block wx:for="{{singerArea}}" wx:key="id">
-      <view class="singer-area {{areaId === item.id ? 'singer-area-active' : ''}}" bindtap="handleClickArea" data-area="{{item.id}}">{{item.name}}</view>
-    </block>
-  </view>
-  <view>
-    <block wx:for="{{singerType}}" wx:key="id">
-      <view class="singer-type {{typeId === item.id ? 'singer-type-active' : ''}}" bindtap="handleClickType" data-type="{{item.id}}">{{item.name}}</view>
-    </block>
-  </view>
-  <view class="title">热门歌手</view>
-</view>
-<view class="singer-list">
-  <block wx:for="{{singerList}}" wx:key="id">
-    <view class="singer-info">
-      <image src="{{item.img1v1Url}}" class="img1v1Url"></image>
-      <text>{{item.name}}</text>
+<view>
+  <view class="fix-top">
+    <view>
+      <block wx:for="{{singerArea}}" wx:key="id">
+        <view class="singer-area {{areaId === item.id ? 'singer-area-active' : ''}}" bindtap="handleClickArea" data-area="{{item.id}}">{{item.name}}</view>
+      </block>
     </view>
-  </block>
-</view>
-<view wx:if="{{isLoading}}">
-  <van-loading size="24px">加载中...</van-loading>
+    <view>
+      <block wx:for="{{singerType}}" wx:key="id">
+        <view class="singer-type {{typeId === item.id ? 'singer-type-active' : ''}}" bindtap="handleClickType" data-type="{{item.id}}">{{item.name}}</view>
+      </block>
+    </view>
+    <view class="title">热门歌手</view>
+  </view>
+  <view class="singer-list">
+    <block wx:for="{{singerList}}" wx:key="id">
+      <view class="singer-info">
+        <image src="{{item.img1v1Url}}" class="img1v1Url"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+  <view wx:if="{{isLoading}}">
+    <van-loading size="24px">加载中...</van-loading>
+  </view>
 </view>
