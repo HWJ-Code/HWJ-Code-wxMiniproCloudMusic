@@ -10,5 +10,9 @@
       <image class="banner-image" src="{{item.imageUrl}}" mode="widthFix" bindload="handleLoadedBannerImg"/>
     </swiper-item>
   </block>
+<<<<<<< HEAD
 </swiper>
 <area-header title="推荐歌单"></area-header>
+=======
+</swiper>
+>>>>>>> adda52b108c87e7705bd8cabbce8aad93b3f91d6
