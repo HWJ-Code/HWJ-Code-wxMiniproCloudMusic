@@ -33,7 +33,7 @@ Page({
     //获取图片高度
     queryRect('.banner-image').then(res =>{
      //，将swiper高度设置为图片高度，保持一致
-     const imgHeight = res[0].height
+     const imgHeight = res[0]?.height
       this.setData({swiperHeight:imgHeight})
    })
   },1000,{trailing:true})

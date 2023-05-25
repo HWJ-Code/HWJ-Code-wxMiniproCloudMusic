@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/HWJ-Code/wxMiniproCloudMusic#readme",
   "dependencies": {
-    "@vant/weapp": "^1.10.19"
+    "@vant/weapp": "^1.10.19",
+    "mobx-miniprogram": "^4.13.2",
+    "mobx-miniprogram-bindings": "^2.1.5"
   }
 }

@@ -1,7 +1,9 @@
 /* pages/main-music/index.wxss */
 .banners {
-  padding: 5px 20px;
+  padding: 5px 0;
 }
 .banner-image {
   width: 100%;
+  border-radius: 8px;
+  transition: translateY(0);
 }

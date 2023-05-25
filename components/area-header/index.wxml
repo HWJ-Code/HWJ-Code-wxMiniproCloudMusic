@@ -1,0 +1,16 @@
+<!--components/area-header/index.wxml-->
+<view class="area-header"> 
+  <view class="left">
+    <view class="left-slot"><slot name='left'></slot></view>
+    <view class="left-default" >
+      <view class="title">{{title}}</view>
+      <image src="/assets/images/icons/arrow-right.png" class="title-icon"></image>
+    </view>
+  </view>
+  <view class="right">
+    <view class="right-slot"><slot name='right'></slot></view>
+    <view class="right-default" >
+      <image src="/assets/images/icons/more.png" class="more-icon"></image>
+    </view>
+  </view>
+</view>

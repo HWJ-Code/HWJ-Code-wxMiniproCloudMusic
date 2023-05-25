@@ -6,3 +6,10 @@ export function getBanners() {
    type:'android'
   })
 }
+
+//获取推荐歌单列表
+export function getRecommendedList(area, type, page = 1, limit = 30,) {
+  return hRequest.get('/artist/list', {
+    area, type, limit, offset: (page - 1) * limit
+  })
+}

@@ -1,4 +1,6 @@
 /**app.wxss**/
 page {
   font-size: 14px;
-}
+  padding: 0 15px;
+  box-sizing: border-box;
+} 
